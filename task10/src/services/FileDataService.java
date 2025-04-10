@@ -4,3 +4,8 @@ public class FileDataService implements DataService {
     public FileDataService(String filePath) {
         this.filePath = filePath;
     }
+    @Override
+    public void performTask() {
+        System.out.println("Reading data from file: " + filePath);
+    }
+}
