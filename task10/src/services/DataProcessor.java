@@ -4,3 +4,7 @@ public class DataProcessor {
     public DataProcessor(DataService dataService) {
         this.dataService = dataService;
     }
+    public void execute() {
+        dataService.performTask();
+    }
+}
