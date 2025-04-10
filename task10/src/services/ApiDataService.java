@@ -4,3 +4,8 @@ public class ApiDataService implements DataService {
     public ApiDataService(String apiKey) {
         this.apiKey = apiKey;
     }
+    @Override
+    public void performTask() {
+        System.out.println("Fetching data from API using key: " + apiKey);
+    }
+}
